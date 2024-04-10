@@ -1,7 +1,7 @@
 version: '3'
 
 services: 
-  vuln_app:
+  app:
     container_name: vuln_app
     build: app/.
     ports:

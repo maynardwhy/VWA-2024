@@ -23,8 +23,8 @@ jobs:
 
       - name: Install Dependencies
         uses: php-actions/composer@v6
-        with:
-          working_dir: "app/."
+        env:
+          COMPOSER: "composer.json"
         
       - run: |
           mkdir -p logs/      
