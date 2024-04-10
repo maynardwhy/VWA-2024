@@ -1,7 +1,8 @@
 version: '3'
 
 services: 
-  web:
-    image: santosomar/vuln_app:latest
+  vuln_app:
+    container_name: vuln_app
+    build: app/.
     ports:
-    - "9900:9900"
+      - 9900:9900
