@@ -1,3 +1,3 @@
-FROM php:latest
+FROM php:8.2-cli
 
-COPY --from=composer/composer:latest-bin /composer /usr/bin/composer
+COPY --from=composer/composer /composer /usr/bin/composer
