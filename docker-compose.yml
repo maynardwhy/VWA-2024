@@ -1,0 +1,7 @@
+version: '3'
+
+services: 
+  web:
+    image: santosomar/vuln_app:latest
+    ports:
+    - "9900:9900"
