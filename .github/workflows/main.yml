@@ -20,7 +20,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3 
-      - uses: php-actions/composer@v6
+
+      - name: Install Dependencies
+        uses: php-actions/composer@v6
+        with:
+          working_dir: "app/."
         
       - run: |
           mkdir -p logs/      
